@@ -5,7 +5,6 @@
 ### v1.1.x
 
 ##### v1.1.0 stable
--
 - **[Clique para ver a Preview](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
 
 # Novos Recursos!

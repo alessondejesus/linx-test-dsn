@@ -1,6 +1,6 @@
 const baseUrl = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products'
 const app = document.getElementById('app')
-
+const loadProducButton = document.getElementById('load-product-button')
 //desativar botao de puxar mais produto
 
 class Request {
@@ -10,23 +10,23 @@ class Request {
     product = async (url) => {
         try {
             const response = await axios.get(url)
-            return response.data.products ? response.data.products : undefined
+            return response.data.products ? response.data.products : false
         } catch (error) {
             console.log(error)
             alert('internal server error cod. 500')
         }
     }
-    nextPage = async (url) => {
+    nextPageUrl = async (url) => {
         try {
             const response = await axios.get(url)
-            return response.data.nextPage ? response.data.nextPage : undefined
+            return response.data.nextPage ? `https://${response.data.nextPage}` : false
         } catch (error) {
             console.log(error)
             alert('internal server error cod. 500')
-            location.href('#')
         }
     }
 }
+const request = new Request()
 
 const productModel = ({ imageUrl, name, description, oldPrice, price, installmentCount, installmentValue }) => {
 
@@ -93,12 +93,14 @@ const productModel = ({ imageUrl, name, description, oldPrice, price, installmen
     product.appendChild(productCaption)
     app.appendChild(product)
 }
+const test  = (a) => {
+    start(a)
+}
 
 
-const start = async () => {
+const start = async (url) => {
     try {
-        const request = new Request()
-        const result = await request.product(baseUrl)
+        const result = await request.product(url)
 
         if (request.mobile()) {
             //calculo se for mobile
@@ -106,7 +108,7 @@ const start = async () => {
         } else {
             for (let item in result) {
                 productModel({
-                    imageUrl: result[item].image.replace('//','https://'),
+                    imageUrl: result[item].image.replace('//', 'https://'),
                     name: result[item].name,
                     description: result[item].description,
                     oldPrice: result[item].oldPrice,
@@ -115,25 +117,17 @@ const start = async () => {
                     installmentValue: result[item].installments.value
                 })
             }
-
         }
-
-
-
-
-
+        // const nextUrl = await request.nextPageUrl(url)
+        loadProducButton.setAttribute('onclick',`test('${await request.nextPageUrl(url)}')`)
 
     } catch (error) {
         console.log(error)
         alert('internal server error cod. 500')
     }
-
 }
 
 
 
-const loadProducts = () =>{
 
-}
-
-app.addEventListener("load", start())
+app.addEventListener("load", start(baseUrl))

@@ -20,11 +20,6 @@ a {
     border-radius: 4px;
 }
 
-.form-control:focus {
-    border-color: #495057;
-    box-shadow: none;
-}
-
 button {
     color: #888888;
     border: 1px solid #707070;
@@ -32,12 +27,26 @@ button {
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: #888888;
+    color: #fff;
+    border-color: #888888;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #495057;
+    box-shadow: none;
+}
+
 .arrow-up {
     display: none;
 }
-.row{
-    margin-left: 0px;
-}
+
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
@@ -141,7 +150,6 @@ input[type=number]::-webkit-inner-spin-button {
     padding: 9px 0 9px 0;
     width: 100%;
     font-size: 16px;
-    background: #fff;
 }
 
 #form .radio-group .femaleRadio {
@@ -179,9 +187,8 @@ input[type=number]::-webkit-inner-spin-button {
 .product {
     padding-top: 50px;
     min-height: 350px;
-    max-height: 350px;
+    /* max-height: 350px; */
     max-width: 200px;
-    min-width: 200px;
 }
 
 .product-thumbnail img {
@@ -205,7 +212,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .product-buttons button {
-    background: #fff;
     width: 95%;
     font-size: 18px;
 }
@@ -225,6 +231,60 @@ input[type=number]::-webkit-inner-spin-button {
     padding: 11px 36px;
 }
 
+/* fade in on load product  */
+
+.product {
+    animation: fadein 3s;
+    /* default */
+    -webkit-animation: fadein 3s;
+    /* Webkit */
+    -moz-animation: fadein 3s;
+    /* Firefox */
+    -ms-animation: fadein 3s;
+    /* IE */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+    /* defaut */
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+    /* Firefox */
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+    /* Webkit */
+}
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+    /* IE */
+}
+
+​
 /* newsletter */
 
 .newsletter span {
@@ -304,17 +364,25 @@ input[type=number]::-webkit-inner-spin-button {
         max-height: 400px;
     }
     .products {
-        justify-content: space-evenly;
+        justify-content: space-between;
+    }
+    .product-caption {
+        width: 200px;
+    }
+    .product-buttons button {
+        width: 100%;
     }
 }
-@media only screen and (max-width: 13050px){
-    .call-actions{
+
+@media only screen and (max-width: 13050px) {
+    .call-actions {
         padding-top: 10px;
     }
     #actions a {
         margin-top: 10px;
     }
 }
+
 @media only screen and (max-width: 950px) {
     .products {
         justify-content: space-evenly;
@@ -373,8 +441,8 @@ input[type=number]::-webkit-inner-spin-button {
     .products .product {
         display: flex;
         max-width: 392px;
-        min-height: 139px;
-        max-height: 139px;
+        min-height: 169px;
+        max-height: 169px;
     }
     .product-thumbnail img {
         height: 129px;
@@ -398,6 +466,8 @@ input[type=number]::-webkit-inner-spin-button {
         flex-direction: column;
     }
 }
+
+
 
 @media only screen and (max-width: 420px) {
     /* header */
@@ -449,8 +519,8 @@ input[type=number]::-webkit-inner-spin-button {
     .products .product {
         display: flex;
         max-width: 392px;
-        min-height: 139px;
-        max-height: 139px;
+        min-height: 169px;
+        max-height: 169px;
     }
     .product-thumbnail img {
         height: 129px;

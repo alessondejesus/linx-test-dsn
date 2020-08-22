@@ -4,8 +4,8 @@
 
 ### v1.0.x
 
-##### v1.0.4 beta
-- Integrandos formulários
+##### v1.0.5 beta
+- Finalizando Estilo para PC
 
 **[Clique para ver a Preview](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
 

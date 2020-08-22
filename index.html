@@ -74,17 +74,17 @@
                     <form action="https://formspree.io/mzbjqjjq" id="form" method="POST">
                         <div class="form-group">
                             <label for="name">Seu nome:</label>
-                            <input class="form-control" type="text" name="name" id="name">
+                            <input class="form-control" type="text" name="name" id="name" required>
                             <label class="labelForm" for="email">E-mail</label>
-                            <input class="form-control" type="email" name="_replyto" id="email">
+                            <input class="form-control" type="email" name="_replyto" id="email" required>
                             <label class="labelForm" for="cpf">CPF:</label>
-                            <input class="form-control" type="text" name="cpf" id="cpf">
+                            <input class="form-control" type="text" name="cpf" id="cpf" required>
 
                         </div>
                         <div class="radio-group">
-                            <input type="radio" id="male" name="gender" value="male">
+                            <input type="radio" id="male" name="gender" value="male" required>
                             <label for="male">Masculino</label>
-                            <input class="femaleRadio" type="radio" id="female" name="gender" value="female">
+                            <input class="femaleRadio" type="radio" id="female" name="gender" value="female" required>
                             <label for="female">Feminino</label>
 
                         </div>
@@ -103,7 +103,146 @@
                 </div>
             </div>
 
-            <div class="products">
+            <div class="products row col-md-12">
+                <div class="product">
+                    <div class="product-thumbnail">
+                        <img src="http://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6875461">
+                    </div>
+                    <div class="product-caption">
+                        <h4>
+                            Nome do produto
+                        </h4>
+                        <p>
+                            Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se
+                            trata.
+                        </p>
+                        <div class="product-price">
+                            <span>
+                                De: R$23,99
+                            </span>
+                            <h5>
+                                Por: R$19,99
+                            </h5>
+                            <span>
+                                ou 2x de R$9,99
+                            </span>
+
+                        </div>
+                        <div class="product-buttons">
+                            <button>
+                                Comprar
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="product">
+                    <div class="product-thumbnail">
+                        <img src="http://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6875461">
+                    </div>
+                    <div class="product-caption">
+                        <h4>
+                            Nome do produto
+                        </h4>
+                        <p>
+                            Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se
+                            trata.
+                        </p>
+                        <div class="product-price">
+                            <span>
+                                De: R$23,99
+                            </span>
+                            <h5>
+                                Por: R$19,99
+                            </h5>
+                            <span>
+                                ou 2x de R$9,99
+                            </span>
+
+                        </div>
+                        <div class="product-buttons">
+                            <button>
+                                Comprar
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="product">
+                    <div class="product-thumbnail">
+                        <img src="http://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6875461">
+                    </div>
+                    <div class="product-caption">
+                        <h4>
+                            Nome do produto
+                        </h4>
+                        <p>
+                            Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se
+                            trata.
+                        </p>
+                        <div class="product-price">
+                            <span>
+                                De: R$23,99
+                            </span>
+                            <h5>
+                                Por: R$19,99
+                            </h5>
+                            <span>
+                                ou 2x de R$9,99
+                            </span>
+
+                        </div>
+                        <div class="product-buttons">
+                            <button>
+                                Comprar
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="product">
+                    <div class="product-thumbnail">
+                        <img src="http://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6875461">
+                    </div>
+                    <div class="product-caption">
+                        <h4>
+                            Nome do produto
+                        </h4>
+                        <p>
+                            Descrição do produto um pouco maior, com duas linhas ou três que explica melhor do que se
+                            trata.
+                        </p>
+                        <div class="product-price">
+                            <span>
+                                De: R$23,99
+                            </span>
+                            <h5>
+                                Por: R$19,99
+                            </h5>
+                            <span>
+                                ou 2x de R$9,99
+                            </span>
+
+                        </div>
+                        <div class="product-buttons">
+                            <button>
+                                Comprar
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
                 <div class="product">
                     <div class="product-thumbnail">
                         <img src="http://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6875461">
@@ -140,11 +279,13 @@
                 </div>
 
 
-                <div class="load-products">
-                    <button>
-                        Ainda mais produtos aqui!
-                    </button>
-                </div>
+
+                
+            </div>
+            <div class="load-products">
+                <button>
+                    Ainda mais produtos aqui!
+                </button>
             </div>
 
             <div class="newsletter">
@@ -164,11 +305,11 @@
                         <div class="share-form">
                             <div class="form-group">
                                 <label for="friendName">Nome do seu amigo:</label>
-                                <input class="form-control" type="text" name="name" id="friendName">
+                                <input class="form-control" type="text" name="name" id="friendName" required>
                             </div>
                             <div class="form-group">
                                 <label for="friendEmail">E-mail:</label>
-                                <input class="form-control" type="email" name="_replyto" id="friendEmail">
+                                <input class="form-control" type="email" name="_replyto" id="friendEmail" required>
                             </div>
                         </div>                        
                         <div class="submitFriend">

@@ -1,7 +1,14 @@
 const baseUrl = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products'
 const app = document.getElementById('app')
 const loadProducButton = document.getElementById('load-product-button')
-//desativar botao de puxar mais produto
+let pagination = {
+    start: true,
+    storage: false,
+    fistPage: '',
+    secondPage: '',
+    result: '',
+    url: baseUrl
+}
 
 class Request {
     mobile = () => {
@@ -19,7 +26,7 @@ class Request {
     nextPageUrl = async (url) => {
         try {
             const response = await axios.get(url)
-            return response.data.nextPage ? `https://${response.data.nextPage}` : false
+            return response.data.nextPage ? response.data.nextPage : false
         } catch (error) {
             console.log(error)
             alert('internal server error cod. 500')
@@ -93,19 +100,59 @@ const productModel = ({ imageUrl, name, description, oldPrice, price, installmen
     product.appendChild(productCaption)
     app.appendChild(product)
 }
-const test  = (a) => {
+const loadProducts = (a) => {
     start(a)
 }
 
-
 const start = async (url) => {
     try {
-        const result = await request.product(url)
-
         if (request.mobile()) {
-            //calculo se for mobile
+            if (pagination.start) {
+                pagination.result = await request.product(pagination.url)
+                pagination.fistPage = pagination.result.slice(0, 4)
+                pagination.secondPage = pagination.result.slice(4, 8)
+                loadProducButton.setAttribute('onclick', `loadProducts('${pagination.url}')`)
+            } else {
+                pagination.url = 'https://' + await request.nextPageUrl(pagination.url)
+                loadProducButton.setAttribute('onclick', `loadProducts('${pagination.url}')`)
+            }
+            if (pagination.storage) {
+                let result = pagination.secondPage
+                for (let item in result) {
+                    productModel({
+                        imageUrl: result[item].image.replace('//', 'https://'),
+                        name: result[item].name,
+                        description: result[item].description,
+                        oldPrice: result[item].oldPrice,
+                        price: result[item].price,
+                        installmentCount: result[item].installments.count,
+                        installmentValue: result[item].installments.value
+                    })
+                }
+                pagination.storage = false
+                pagination.start = true
+            } else {
+                let result = pagination.fistPage
+                for (let item in result) {
+                    productModel({
+                        imageUrl: result[item].image.replace('//', 'https://'),
+                        name: result[item].name,
+                        description: result[item].description,
+                        oldPrice: result[item].oldPrice,
+                        price: result[item].price,
+                        installmentCount: result[item].installments.count,
+                        installmentValue: result[item].installments.value
+                    })
+                }
+                pagination.storage = true
+                pagination.start = false
+            }
+
+
+
 
         } else {
+            let result = await request.product(url)
             for (let item in result) {
                 productModel({
                     imageUrl: result[item].image.replace('//', 'https://'),
@@ -117,17 +164,12 @@ const start = async (url) => {
                     installmentValue: result[item].installments.value
                 })
             }
+            loadProducButton.setAttribute('onclick', `loadProducts('https://${await request.nextPageUrl(url)}')`)
         }
-        // const nextUrl = await request.nextPageUrl(url)
-        loadProducButton.setAttribute('onclick',`test('${await request.nextPageUrl(url)}')`)
-
     } catch (error) {
         console.log(error)
         alert('internal server error cod. 500')
     }
 }
-
-
-
 
 app.addEventListener("load", start(baseUrl))

@@ -7,6 +7,9 @@
 
 /* global */
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Roboto', sans-serif;
     color: #888888;
@@ -466,8 +469,6 @@ input[type=number]::-webkit-inner-spin-button {
         flex-direction: column;
     }
 }
-
-
 
 @media only screen and (max-width: 420px) {
     /* header */

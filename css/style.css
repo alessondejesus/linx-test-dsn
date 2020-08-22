@@ -35,6 +35,12 @@ button {
 .arrow-up {
     display: none;
 }
+.row{
+    margin-left: 0px;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
 /* header */
 
@@ -171,7 +177,7 @@ button {
 }
 
 .product {
-    padding-top: 20px;
+    padding-top: 50px;
     min-height: 350px;
     max-height: 350px;
     max-width: 200px;
@@ -185,6 +191,7 @@ button {
 
 .product-caption h4 {
     font-size: 14px;
+    padding-top: 5px;
 }
 
 .product-caption p {
@@ -199,7 +206,7 @@ button {
 
 .product-buttons button {
     background: #fff;
-    width: 100%;
+    width: 95%;
     font-size: 18px;
 }
 
@@ -209,7 +216,7 @@ button {
 
 .load-products {
     text-align: center;
-    padding-top: 52px;
+    padding-top: 80px;
     padding-bottom: 60px;
 }
 
@@ -296,9 +303,29 @@ button {
     .product {
         max-height: 400px;
     }
+    .products {
+        justify-content: space-evenly;
+    }
+}
+@media only screen and (max-width: 13050px){
+    .call-actions{
+        padding-top: 10px;
+    }
+    #actions a {
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .products {
+        justify-content: space-evenly;
+    }
 }
 
-/* mobile  */
+@media only screen and (min-width: 801px) {
+    .product-caption p {
+        min-height: 50px;
+    }
+}
 
 @media only screen and (max-width: 800px) {
     #banner .container {

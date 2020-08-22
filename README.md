@@ -4,10 +4,10 @@
 
 ### v1.0.x
 
-##### v1.0.7 beta
-- Iniciando BackEnd
+##### v1.0.8 beta
+- Agora é possível visualizar os produtos em desktops
 
 **[Clique para ver a Preview](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
 
-_A resolução requisitada para a criação do layout é acima da média, 1500px, portanto, verifique seu zoom para uma melhor experiência..._
+_A resolução requisitada é de 1500px, portanto, verifique definições para uma melhor experiência..._
 ------------

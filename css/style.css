@@ -287,6 +287,17 @@ button {
     color: #fff;
 }
 
+/* desktop  */
+
+@media only screen and (max-width: 1500px) {
+    * {
+        box-sizing: border-box;
+    }
+    .product {
+        max-height: 400px;
+    }
+}
+
 /* mobile  */
 
 @media only screen and (max-width: 800px) {
@@ -364,7 +375,7 @@ button {
 @media only screen and (max-width: 420px) {
     /* header */
     #header #banner {
-        background: linear-gradient(198deg, #707070 75%, #fff 75%);
+        background: linear-gradient(196deg, #707070 75%, #fff 75%);
     }
     #banner .container {
         padding: 0;
@@ -387,7 +398,7 @@ button {
     /* main */
     #main {
         width: 92%;
-        padding: 30px 0;
+        padding: 10px 0;
     }
     #main-elements {
         display: block;

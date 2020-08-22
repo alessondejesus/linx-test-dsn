@@ -5,8 +5,9 @@
 ### v1.0.x
 
 ##### v1.0.2 beta
-- Início do projeto
+- Estilizando a interface para PC
+- Hospedando no GitHub Page
 
-**[Em breve você poderá clicar aqui para ver a preview](https://github.com/alessondejesus  "Clique Aqui")**
+**[Clique para ver a Preview](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
 
 ------------

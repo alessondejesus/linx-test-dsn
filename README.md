@@ -4,8 +4,8 @@
 
 ### v1.0.x
 
-##### v1.0.5 beta
-- Finalizando Estilo para PC
+##### v1.0.6 beta
+- Finalizando Estilo para Mobile
 
 **[Clique para ver a Preview](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
 

@@ -32,6 +32,10 @@ button {
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
+.arrow-up {
+    display: none;
+}
+
 /* header */
 
 #header {
@@ -70,11 +74,14 @@ button {
 #actions {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-end;
 }
 
 #actions a {
     text-align: center;
     width: 160px;
+    border: 1px solid #707070;
     background-color: #fff;
     color: #888888;
     font-size: 16px;
@@ -85,6 +92,7 @@ button {
 /* main */
 
 #main {
+    position: relative;
     width: 61%;
     font-size: 12px;
     padding-top: 20px;
@@ -160,13 +168,14 @@ button {
 
 .products {
     padding-top: 10px;
-    display: flex;
-	justify-content: space-between;
 }
+
 .product {
     padding-top: 20px;
-    height: 350px;
-    width: 200px;
+    min-height: 350px;
+    max-height: 350px;
+    max-width: 200px;
+    min-width: 200px;
 }
 
 .product-thumbnail img {
@@ -276,4 +285,162 @@ button {
     font-size: 12px;
     text-align: center;
     color: #fff;
+}
+
+/* mobile  */
+
+@media only screen and (max-width: 800px) {
+    #banner .container {
+        padding: 0;
+        width: 80%;
+    }
+    #header #banner .info-box {
+        width: 87%;
+        padding-top: 62px;
+        text-align: justify;
+    }
+    #banner .container p {
+        width: 90%;
+    }
+    #actions {
+        padding-top: 5px;
+    }
+    #actions a {
+        margin-top: 20px;
+    }
+    /* main */
+    #main {
+        width: 92%;
+        padding: 30px 0;
+    }
+    #main-elements {
+        display: block;
+    }
+    #main-elements .main-text {
+        width: 100%;
+    }
+    #main-elements .form {
+        width: 100%;
+        padding-top: 12px;
+    }
+    #main-elements .form input {
+        border-radius: 1px;
+    }
+    .arrow-up {
+        display: flex;
+        float: right;
+        padding-top: 4px;
+    }
+    /* product */
+    .products .product {
+        display: flex;
+        max-width: 392px;
+        min-height: 139px;
+        max-height: 139px;
+    }
+    .product-thumbnail img {
+        height: 129px;
+        width: 169px;
+    }
+    .product-caption {
+        width: 200px;
+        padding-left: 15px;
+    }
+    .product-caption p {
+        display: none;
+    }
+    /* newsletter */
+    .share {
+        width: 100%;
+    }
+    #share-form .share-form div {
+        width: 100%;
+    }
+    .share-form {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    /* header */
+    #header #banner {
+        background: linear-gradient(198deg, #707070 75%, #fff 75%);
+    }
+    #banner .container {
+        padding: 0;
+        width: 80%;
+    }
+    #header #banner .info-box {
+        width: 87%;
+        padding-top: 62px;
+        text-align: justify;
+    }
+    #banner .container p {
+        width: 90%;
+    }
+    #actions {
+        padding-top: 5px;
+    }
+    #actions a {
+        margin-top: 20px;
+    }
+    /* main */
+    #main {
+        width: 92%;
+        padding: 30px 0;
+    }
+    #main-elements {
+        display: block;
+    }
+    #main-elements .main-text {
+        width: 100%;
+    }
+    #main-elements .form {
+        width: 100%;
+        padding-top: 12px;
+    }
+    #main-elements .form input {
+        border-radius: 1px;
+    }
+    .arrow-up {
+        display: flex;
+        float: right;
+        padding-top: 4px;
+    }
+    /* product */
+    .products .product {
+        display: flex;
+        max-width: 392px;
+        min-height: 139px;
+        max-height: 139px;
+    }
+    .product-thumbnail img {
+        height: 129px;
+        width: 169px;
+    }
+    .product-caption {
+        width: 200px;
+        padding-left: 15px;
+    }
+    .product-caption p {
+        display: none;
+    }
+    /* newsletter */
+    .share {
+        width: 100%;
+    }
+    #share-form .share-form div {
+        width: 100%;
+    }
+    .share-form {
+        flex-direction: column;
+    }
+    /* footer */
+    #footer {
+        height: 158px;
+        background-image: linear-gradient(-5deg, #707070 75%, #fff 75%);
+    }
+    #footer .copyright {
+        margin-top: 40px;
+    }
 }

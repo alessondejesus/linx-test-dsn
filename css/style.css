@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: unset;
+}
+
+/* global */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #888888;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    border-color: #495057;
+    box-shadow: none;
+}
+
+button {
+    color: #888888;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+/* header */
+
+#header {
+    text-align: center;
+}
+
+#header #banner {
+    height: 399px;
+    background: linear-gradient(185deg, #707070 75%, #fff 75%);
+}
+
+#header #banner .info-box {
+    padding-top: 69px;
+    color: #fff;
+    width: 42%;
+}
+
+#banner .container span {
+    font-size: 20px;
+}
+
+#banner .container h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#banner .container p {
+    font-size: 14px;
+}
+
+.call-actions {
+    padding-top: 30px;
+    width: 50%;
+}
+
+#actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+#actions a {
+    text-align: center;
+    width: 160px;
+    background-color: #fff;
+    color: #888888;
+    font-size: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/* main */
+
+#main {
+    width: 61%;
+    font-size: 12px;
+    padding-top: 20px;
+    padding: 60px 0;
+}
+
+#main-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#main-elements .main-text {
+    width: 58%;
+}
+
+#main-elements .main-text h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#main-elements .form {
+    width: 37%;
+}
+
+/* form */
+
+#form .form-group input {
+    margin-top: -8px;
+    padding: 0;
+    height: 30px;
+    border: 1px solid #707070;
+}
+
+.labelForm {
+    padding-top: 20px;
+}
+
+#form button {
+    padding: 9px 0 9px 0;
+    width: 100%;
+    font-size: 16px;
+    background: #fff;
+}
+
+#form .radio-group .femaleRadio {
+    margin-left: 40px;
+}
+
+/* featured */
+
+.featured {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.featured hr {
+    background-color: #707070;
+}
+
+.featured .featured-text {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: -30px;
+}
+
+.featured-text span {
+    background-color: #fff;
+    padding: 0 17px 0 17px;
+}
+
+/* product */
+
+.products {
+    padding-top: 30px;
+}
+
+.product {
+    height: 350px;
+    width: 200px;
+}
+
+.product-thumbnail img {
+    width: 200px;
+    height: 150px;
+}
+
+.product-caption h4 {
+    font-size: 14px;
+    padding-top: 14px;
+}
+
+.product-caption p {
+    font-size: 12px;
+}
+
+.product-price h5 {
+    margin-top: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-buttons button {
+    background: #fff;
+    width: 100%;
+    font-size: 18px;
+}
+
+.product-buttons {
+    padding-top: 8px;
+}
+
+.load-products {
+    text-align: center;
+    padding-top: 52px;
+    padding-bottom: 60px;
+}
+
+.load-products button {
+    font-size: 16px;
+    padding: 11px 36px;
+}
+
+/* newsletter */
+
+.newsletter span {
+    padding: 0 5px 0 5px;
+}
+
+.share {
+    margin: 0 auto;
+    width: 78%;
+}
+
+.share h4 {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#share-form {
+    padding-top: 29px;
+}
+
+#share-form div input {
+    border-radius: 0px;
+}
+
+#share-form div button {
+    font-size: 16px;
+    padding: 11px 85px;
+}
+
+.share-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.share-form .form-group {
+    width: 47%;
+}
+
+.share-form .form-group input {
+    padding: 0px;
+    height: 30px;
+    border: 1px solid #707070;
+}
+
+.submitFriend {
+    padding-top: 35px;
+    text-align: center;
+}
+
+/* footer */
+
+#footer {
+    background: linear-gradient(-3deg, #707070 75%, #fff 75%);
+    width: 100;
+    height: 293px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer .copyright {
+    margin-top: 80px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}

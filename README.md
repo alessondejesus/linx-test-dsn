@@ -6,13 +6,13 @@
 
 ------------
 
-##### v2.0.3 remaster
+##### v2.0.4 remaster
 
 **[Preview aqui...](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
 
 # Novos Ajuste
 
-  - Ajustando caixa de texto e seus CSS
-  - Ajustando formulário e seus CSS
+  - Ajustando footer
+  - Ajustando formulário de envio para amigos
 
 ###### _A resolução ideal é de 1500px, portanto, verifique suas definições para uma melhor experiência..._

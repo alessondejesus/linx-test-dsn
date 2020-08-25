@@ -1,21 +1,16 @@
 ## Linx - Desafio | Frontend Developer
 
-  _Landing Page_ com uma grade de produtos, formulário de _contato_ e _newsletter_
+  _Landing Page_ com grade de produtos, formulário de contato e convite para amigos
 
-### v1.1.x
+### v2.0.x
+------------
+##### v2.0.1 remaster
+- **[Preview aqui...](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
 
-##### v1.1.0 stable
--
-- **[Clique para ver a Preview](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
+# Novos Ajuste
 
-# Novos Recursos!
+  - Removendo bootstrap
+  - ajustando header e seus CSS
 
-  - Mais produtos podem ser carreados através do botão "Ainda mais produtos aqui!" em Mobiles
-  - Rolamento suave (links de âncora)
-  - Layout mais responsivo
-  - Carregamento de produtos mais suave
-  - Explore os links do menu
-  - Formulários funcionais 
-
-_A resolução ideal é de 1500px, portanto, verifique definições para uma melhor experiência..._
+###### _A resolução ideal é de 600px, portanto, verifique suas definições para uma melhor experiência..._
 ------------

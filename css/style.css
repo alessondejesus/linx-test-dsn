@@ -1,4 +1,5 @@
 /* global */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 * {
     padding: 0;
@@ -8,6 +9,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #888888;
@@ -18,14 +20,16 @@ a:hover {
 }
 
 a {
-    border-radius: 4px;
     text-decoration: none;
+}
+
+a, button, input {
+    border-radius: 4px;
 }
 
 button {
     color: #888888;
     border: 1px solid #707070;
-    border-radius: 4px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
@@ -53,7 +57,7 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-/* header */
+/* start header */
 
 #header {
     text-align: center;
@@ -63,6 +67,7 @@ input[type=number]::-webkit-inner-spin-button {
     background: linear-gradient(185deg, #707070 75%, #fff 75%);
     justify-content: center;
 }
+
 #banner {
     width: 800px;
 }
@@ -101,46 +106,71 @@ input[type=number]::-webkit-inner-spin-button {
     padding: 9px 33px;
 }
 
-/* main */
+/* end header */
 
-#main {
-    position: relative;
-    width: 61%;
+/* start content */
+
+#content {
     font-size: 12px;
     padding-top: 20px;
-    padding: 60px 0;
+    width: 920px;
+    margin: 0 auto;
 }
 
-#main-elements {
+/* start info box */
+
+#content .info-box {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
-#main-elements .main-text {
-    width: 58%;
+#content .info-box .box-text {
+    width: 520px;
 }
 
-#main-elements .main-text h4 {
+#content .info-box .box-text h4 {
+    font-weight: 400;
     font-size: 20px;
-    padding-bottom: 10px;
 }
 
-#main-elements .form {
-    width: 37%;
+#content .info-box .box-text p {
+    line-height: 18px;
+    padding-top: 20px;
 }
+
+/* end info box */
 
 /* form */
 
-#form .form-group input {
-    margin-top: -8px;
-    padding: 0;
-    height: 30px;
-    border: 1px solid #707070;
+.form {
+    width: 340px;
 }
 
-.labelForm {
+#form, #form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#form .form-group input {
+    border: 1px solid #707070;
+    padding: 6px;
+    margin-top: 7px;
+}
+
+#form .form-group .labelForm {
     padding-top: 20px;
+}
+
+#form .radio-group {
+    padding-top: 20px;
+}
+
+#form .radio-group label, #form .radio-group input {
+    cursor: pointer;
+}
+
+#form .radio-group label{
+    padding-left: 5px;
 }
 
 #form button {
@@ -152,6 +182,12 @@ input[type=number]::-webkit-inner-spin-button {
 #form .radio-group .femaleRadio {
     margin-left: 40px;
 }
+
+#form button {
+    margin-top: 23px;
+}
+
+/* end form */
 
 /* featured */
 
@@ -353,6 +389,4 @@ input[type=number]::-webkit-inner-spin-button {
 
 /* desktop  */
 
-@media only screen and (max-width: 1500px) {
-    
-}
+@media only screen and (max-width: 1500px) {}

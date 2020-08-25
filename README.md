@@ -6,12 +6,13 @@
 
 ------------
 
-##### v2.0.2 remaster
+##### v2.0.3 remaster
 
-* **[Preview aqui...](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
+**[Preview aqui...](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
 
 # Novos Ajuste
 
-  + Configurando README.md
+  - Ajustando caixa de texto e seus CSS
+  - Ajustando formulário e seus CSS
 
 ###### _A resolução ideal é de 1500px, portanto, verifique suas definições para uma melhor experiência..._

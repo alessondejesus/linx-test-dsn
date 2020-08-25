@@ -27,7 +27,7 @@
                 <a href="https://www.linx.com.br/quem-somos/" target="__blanck">
                     Conheça a Linx
                 </a>
-                <a href="#main">
+                <a href="#content">
                     Ajude o algorítimo
                 </a>
                 <a href="#productSession">
@@ -40,9 +40,9 @@
         </div>
     </header>
     <main>
-        <div id="main">
-            <div id="main-elements">
-                <div class="main-text">
+        <div id="content">
+            <div class="info-box">
+                <div class="box-text">
                     <h4>
                         Ajude o algorítimo a ser mais certeiro <i class="fas fa-chevron-up arrow-up"></i>
                     </h4>
@@ -69,19 +69,17 @@
                     <form action="https://formspree.io/mzbjqjjq" id="form" method="POST">
                         <div class="form-group">
                             <label for="name">Seu nome:</label>
-                            <input class="form-control" type="text" name="name" id="name" required>
+                            <input class="form-control" type="text" name="name" id="name" maxlength="100" required>
                             <label class="labelForm" for="email">E-mail</label>
-                            <input class="form-control" type="email" name="_replyto" id="email" required>
+                            <input class="form-control" type="email" name="_replyto" id="email" maxlength="100" required>
                             <label class="labelForm" for="cpf">CPF:</label>
-                            <input class="form-control" type="number" name="cpf" id="cpf" required>
-
+                            <input class="form-control" type="text" name="cpf" id="cpf" maxlength="11" required>
                         </div>
                         <div class="radio-group">
                             <input type="radio" id="male" name="gender" value="male" required>
                             <label for="male">Masculino</label>
                             <input class="femaleRadio" type="radio" id="female" name="gender" value="female" required>
                             <label for="female">Feminino</label>
-
                         </div>
                         <button type="submit">Enviar</button>
                     </form>

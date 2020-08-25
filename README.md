@@ -6,13 +6,11 @@
 
 ------------
 
-##### v2.0.4 remaster
+##### v2.0.5 remaster
 
 **[Preview aqui...](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
 
 # Novos Ajuste
-
-  - Ajustando footer
-  - Ajustando formulário de envio para amigos
+  - Layout totalmente responsivo 
 
 ###### _A resolução ideal é de 1500px, portanto, verifique suas definições para uma melhor experiência..._

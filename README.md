@@ -39,7 +39,9 @@ For the project to build,  **these files must exist with exact filenames**:
 ├── js
 │   └── service
 │   	└── product.js
+```
 
+```javascript
 Request.product(apiUrl) // get products by API URL
  Request.nextUrl(baseUrl) // get next page url from a baseURL
  ```
@@ -50,6 +52,9 @@ Request.product(apiUrl) // get products by API URL
 │   └── models
 │   	└── Product.js
 
+```
+
+```javascript
 productModel.create(product) 
 
 // create and return a model. @product is a object and should return:
@@ -68,6 +73,9 @@ product.installments.value // example: 0.69
 │   └── controllers
 │   	└── product-controllers.js
 
+```
+
+```javascript
 Controller.isMobile() // return a bolean value if device is mobile 
 Controller.getClassButton(idButton) // get a class of a button by ID
 Controller.setClassButton(idButton, newClassButton) // define a new class of a button by ID

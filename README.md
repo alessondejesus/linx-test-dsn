@@ -2,7 +2,7 @@
    ![remaster](https://img.shields.io/badge/remaster-v2.0.7-green?labelColor=black&style=flat) ![stable](https://img.shields.io/badge/stable-v2.0.7-blue?labelColor=black&style=flat)  
  
 **[Preview here...](https://alessondejesus.github.io/linx-test-dsn/ "Click here")**
-###### _  The ideal resolution is 1500px,  check your settings for the best experience :D_
+###### *The ideal resolution is 1500px,  check your settings for the best experience :D*
 
 ### v2.0.7 - Features
 

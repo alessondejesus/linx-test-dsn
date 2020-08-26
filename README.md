@@ -43,7 +43,7 @@ For the project to build,  **these files must exist with exact filenames**:
 
 ```javascript
 Request.product(apiUrl) // get products by API URL
- Request.nextUrl(baseUrl) // get next page url from a baseURL
+Request.nextUrl(baseUrl) // get next page url from a baseURL
  ```
  ##### Product model
  ```sh

@@ -40,8 +40,8 @@ For the project to build,  **these files must exist with exact filenames**:
 │   └── service
 │   	└── product.js
 
-Request.product(apiUrl) /* get products by API URL */
- Request.nextUrl(baseUrl) /* get next page url from a baseURL */
+Request.product(apiUrl) // get products by API URL
+ Request.nextUrl(baseUrl) // get next page url from a baseURL
  ```
  ##### Product model
  ```sh
@@ -52,16 +52,14 @@ Request.product(apiUrl) /* get products by API URL */
 
 productModel.create(product) 
 
-/* 
-create and return a model. @product is a object and should return:
-- model.image example: '//images.site.com/back-cat.jpg'
-- model.name example: 'paint'
-- model.decription example: 'paints is so is beautiful'
-- model.oldPrice  example: 6.99
-- model.price example: 5.99
-- mode.installments.count example: 10
-- mode.installments.value example: 0.69
-*/
+// create and return a model. @product is a object and should return:
+product.image // example: '//images.site.com/back-cat.jpg'
+product.name // example: 'paint'
+product.decription // example: 'paints is so is beautiful'
+product.oldPrice  // example: 6.99
+product.price // example: 5.99
+product.installments.count // example: 10
+product.installments.value // example: 0.69
  ```
   ##### Controllers
  ```sh
@@ -70,9 +68,9 @@ create and return a model. @product is a object and should return:
 │   └── controllers
 │   	└── product-controllers.js
 
-Controller.isMobile() /* return a bolean value if device is mobile */
-Controller.getClassButton(idButton) /* get a class of a button by ID */
-Controller.setClassButton(idButton, newClassButton) /* define a new class of a button by ID*/
-Controller.productPost(productModel) /* create a new product by DOM HTML */
+Controller.isMobile() // return a bolean value if device is mobile 
+Controller.getClassButton(idButton) // get a class of a button by ID
+Controller.setClassButton(idButton, newClassButton) // define a new class of a button by ID
+Controller.productPost(productModel) // create a new product by DOM HTML
 
  ```

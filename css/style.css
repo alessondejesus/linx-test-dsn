@@ -240,8 +240,8 @@ input[type=number]::-webkit-inner-spin-button {
 .products {
     width: 200px;
     padding-top: 39px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .product-caption img, .product-caption h4, .product-caption p, .product-caption .product-price {
@@ -298,20 +298,20 @@ input[type=number]::-webkit-inner-spin-button {
 
 /* fade in on load product  */
 
-.product {
-    animation: fadein 3s;
+#products .products {
+    animation: fadein 2s;
     /* default */
-    -webkit-animation: fadein 3s;
+    -webkit-animation: fadein 2s;
     /* Webkit */
-    -moz-animation: fadein 3s;
+    -moz-animation: fadein 2s;
     /* Firefox */
-    -ms-animation: fadein 3s;
+    -ms-animation: fadein 2s;
     /* IE */
 }
 
 @keyframes fadein {
     from {
-        opacity: 0.3;
+        opacity: 0.5;
     }
     to {
         opacity: 1;
@@ -321,7 +321,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 @-moz-keyframes fadein {
     from {
-        opacity: 0.3;
+        opacity: 0.5;
     }
     to {
         opacity: 1;
@@ -331,7 +331,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 @-webkit-keyframes fadein {
     from {
-        opacity: 0.3;
+        opacity: 0.5;
     }
     to {
         opacity: 1;
@@ -341,7 +341,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 @-ms-keyframes fadein {
     from {
-        opacity: 0.3;
+        opacity: 0.5;
     }
     to {
         opacity: 1;

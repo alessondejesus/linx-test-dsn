@@ -6,11 +6,13 @@
 
 ------------
 
-##### v2.0.5 remaster
+##### v2.0.6 remaster
 
 **[Preview aqui...](https://alessondejesus.github.io/linx-test-dsn/  "Clique Aqui")**
 
 # Novos Ajuste
-  - Layout totalmente responsivo 
+  - layout finalizado
+  - Produtos vem diretos da API
+  - Melhorias no código
 
 ###### _A resolução ideal é de 1500px, portanto, verifique suas definições para uma melhor experiência..._
